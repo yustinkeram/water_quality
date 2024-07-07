@@ -182,7 +182,7 @@ predicted_label = (prediction > 0.5).astype(int)  # Mengasumsikan threshold 0.5 
 print(f"Prediksi kualitas air (0: Tidak layak minum, 1: Layak minum): {predicted_label[0]}")
 
 # Simpan model ke file HDF5
-#model.save('model_water_quality_prediction.h5')
+model.save('model_water_quality_prediction.h5')
 
 #from google.colab import files
-#files.download('model_water_quality_prediction.h5')
+files.download('model_water_quality_prediction.h5')
